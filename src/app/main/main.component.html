@@ -1,7 +1,7 @@
 <div class="main">
-  <p class="first">H</p>
-  <p [ngClass]="{hide: hide, first: !hide}" #secondLetter class="hide second">E</p>
-  <p #thirdLetter class="hide third">L</p>
-  <p #fourthLetter class="hide fourth">L</p>
-  <p #fifthLetter class="hide fifth">O</p>
+  <p class="show">H</p>
+  <p [ngClass]="{hide: hide.second, show: !hide.second}">E</p>
+  <p [ngClass]="{hide: hide.third, show: !hide.third}">L</p>
+  <p [ngClass]="{hide: hide.fourth, show: !hide.fourth}">L</p>
+  <p [ngClass]="{hide: hide.fifth, show: !hide.fifth}">O</p>
 </div>

@@ -17,30 +17,11 @@
   }
 }
 
-.first, .second, .third, .fourth, .fifth {
+.show {
+  display: flex;
   font-size: 40px;
   margin: 5px;
   animation: appear 2s cubic-bezier(0,1.5,1,1.5);
-}
-
-.first {
-  animation: appear 2s cubic-bezier(0,1.5,1,1.5);
-}
-
-.second {
-  animation: appear 2s 0.3s cubic-bezier(0,1.5,1,1.5);
-}
-
-.third {
-  animation: appear 2s 0.6s cubic-bezier(0,1.5,1,1.5);
-}
-
-.fourth {
-  animation: appear 2s 0.9s cubic-bezier(0,1.5,1,1.5);
-}
-
-.fifth {
-  animation: appear 2s 1.2s cubic-bezier(0,1.5,1,1.5);
 }
 
 .hide {

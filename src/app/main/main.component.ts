@@ -25,9 +25,10 @@ export class MainComponent implements OnInit {
 };
 
   ngOnInit(): void {
-    // for await(let key: boolean | undefined of this.hide) {
-    //   // setTimeout(() => {this.hide[key] = false}, 300)
-    // }
+    setTimeout(() => {this.hide.second = false}, 500);
+    setTimeout(() => {this.hide.third = false}, 1000);
+    setTimeout(() => {this.hide.fourth = false}, 1500);
+    setTimeout(() => {this.hide.fifth = false}, 2000);
   }
 
 }
