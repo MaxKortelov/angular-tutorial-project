@@ -1,0 +1,26 @@
+<header class="header">
+  <nav>
+    <a
+      routerLink="/"
+      routerLinkActive="active"
+      (click)="page = 'main'"
+      [ngStyle]="{
+        color: page === 'main' ? 'black' : 'white'
+      }"
+    ><span>Main</span></a>
+    <a
+      routerLink="/numbers"
+      routerLinkActive="active"
+      (click)="page = 'numbers'"
+      [ngStyle]="{
+        color: page === 'numbers' ? 'black' : 'white'
+      }"
+    ><span>Numbers</span></a>
+  </nav>
+</header>
+<main class="main">
+  <router-outlet></router-outlet>
+</main>
+<footer class="footer">
+  Provided by Max 2021
+</footer>
