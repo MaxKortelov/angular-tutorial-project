@@ -1,1 +1,19 @@
-<p>numbers works!</p>
+<div
+  class="main"
+  [style]="{
+    background: 'center / cover no-repeat url(./assets/numbers.jpeg)'
+  }"
+>
+  <div class="title">Type your Number</div>
+  <form  [formGroup]="formGroup">
+   <input type="number" formControlName="name" (keyup)="onKeyUp($event)" (keydown)="onKeyDown()" class="searchField">
+  </form>
+  <div class="info">
+    <span [class]="{
+      show: this.numberService.number.text,
+      hide: !this.numberService.number.text
+    }">
+          {{ this.numberService.number.text }}
+    </span>
+  </div>
+</div>

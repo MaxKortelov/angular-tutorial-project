@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { Routes, RouterModule } from "@angular/router";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {HttpClientModule} from "@angular/common/http";
 
 import { AppComponent } from './app.component';
 import { NumbersComponent } from './numbers/numbers.component';
@@ -22,7 +24,10 @@ const appRoutes : Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   exports: [RouterModule],
   providers: [],
