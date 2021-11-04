@@ -1,28 +1,16 @@
 <header class="header">
   <nav>
     <a
-      routerLink="/"
+      routerLink="/main"
       routerLinkActive="active"
-      (click)="this.appService.setPage('main')"
-      [ngStyle]="{
-        color: this.appService.page === 'main' ? 'black' : 'white'
-      }"
     ><span>Main</span></a>
     <a
       routerLink="/numbers"
       routerLinkActive="active"
-      (click)="this.appService.setPage('numbers')"
-      [ngStyle]="{
-        color: this.appService.page === 'numbers' ? 'black' : 'white'
-      }"
     ><span>Numbers</span></a>
     <a
       routerLink="/pokemon"
       routerLinkActive="active"
-      (click)="this.appService.setPage('pokemon')"
-      [ngStyle]="{
-        color: this.appService.page === 'pokemon' ? 'black' : 'white'
-      }"
     ><span>Pokemon</span></a>
   </nav>
 </header>

@@ -12,9 +12,10 @@ import { PokemonComponent } from './pokemon/pokemon.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 const appRoutes : Routes = [
-  {path: '', component: MainComponent},
+  {path: '', redirectTo: 'main', pathMatch: 'full'},
   {path: 'numbers', component: NumbersComponent},
   {path: 'pokemon', component: PokemonComponent},
+  {path: 'main', component: MainComponent},
   {path: '**', component: NotFoundComponent},
 ];
 

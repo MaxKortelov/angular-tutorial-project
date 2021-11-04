@@ -15,6 +15,9 @@
     a {
       text-decoration: none;
       color: white;
+      &.active {
+        color: black;
+      }
       span {
         display: flex;
         justify-content: center;
